@@ -5,4 +5,5 @@ name = input("What's your name? ")
 
 # Say hello to user
 # When you use , it automatically adds a blank space for you
-print("Hello,", name)
+print("Hello,", name, sep='$', end='???')
+
