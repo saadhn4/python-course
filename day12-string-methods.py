@@ -23,7 +23,7 @@ print(name.isdigit())
 # If string has a space itll print false
 print(name.isalpha())
 
-# 8. Prints number of times '-' appears in a string
+# 8. Prints number of times '-' appears in a sting
 print(phone_number.count("-"))
 
 # 9. Replaces '-' with empty space
