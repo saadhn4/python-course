@@ -89,25 +89,63 @@
 # Calculate the final amount
 # Ask user for initial money(principle), interest rate and time in years
 
-principle = float(input("Enter principle: "))
+# principle = float(input("Enter principle: "))
 
-while principle <= 0:
-    print("Principle cannot be less than or equal to 0")
-    principle = float(input("Enter principle: "))
-
-
-rate = float(input("Enter rate: "))
-
-while rate <= 0:
-    print("Interest cannot be less than or equal to 0")
-    rate = float(input("Enter rate: "))
+# while principle <= 0:
+#     print("Principle cannot be less than or equal to 0")
+#     principle = float(input("Enter principle: "))
 
 
-time = float(input("Enter time in years: "))
-while time <= 0:
-    print("Time cannot be less than or equal to zero")
-    time = float(input("Enter time: "))
+# rate = float(input("Enter rate: "))
+
+# while rate <= 0:
+#     print("Interest cannot be less than or equal to 0")
+#     rate = float(input("Enter rate: "))
 
 
-total = principle * (1 + rate / 100) ** time
-print(f"Balance after {time} years is ${total:.2f}")
+# time = float(input("Enter time in years: "))
+# while time <= 0:
+#     print("Time cannot be less than or equal to zero")
+#     time = float(input("Enter time: "))
+
+
+# total = principle * (1 + rate / 100) ** time
+# print(f"Balance after {time} years is ${total:.2f}")
+
+# 🧩 Exercise: ATM Withdrawal System
+# 🎯 Task
+
+# Create a program that simulates an ATM.
+
+# 📌 Requirements
+# Ask the user for:
+# Account balance
+# Withdrawal amount
+# Validate inputs:
+# Balance must be > 0
+# Withdrawal must be > 0
+# Withdrawal cannot exceed balance
+# Keep asking until valid input is given.
+# After valid input:
+# Deduct withdrawal from balance
+# Show remaining balance
+
+acc_balance = float(input("Enter your bank balance: "))
+
+
+while acc_balance <= 0:
+    print("Balance cannot be less than 0")
+    acc_balance = float(input("Enter your bank balance: "))
+
+withdrawl = float(input("Enter the amount you want to withdraw: "))
+
+while withdrawl <= 0:
+    print("Amount withdrawn must be greater than zero")
+    withdrawl = float(input("Enter the amount you want to withdraw: "))
+
+while withdrawl > acc_balance:
+    print("Cannot withdraw more than your balance")
+    withdrawl = float(input("Enter the amount you want to withdraw: "))
+
+new_balance = acc_balance - withdrawl
+print(f"Your new balance is {new_balance}")

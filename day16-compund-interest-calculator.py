@@ -1,4 +1,4 @@
-# Compound interest calculatoe
+# Compound interest calculator
 
 principle = float(input("Enter principle: "))
 
