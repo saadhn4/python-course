@@ -130,22 +130,108 @@
 # Deduct withdrawal from balance
 # Show remaining balance
 
-acc_balance = float(input("Enter your bank balance: "))
+# acc_balance = float(input("Enter your bank balance: "))
 
 
-while acc_balance <= 0:
-    print("Balance cannot be less than 0")
-    acc_balance = float(input("Enter your bank balance: "))
+# while acc_balance <= 0:
+#     print("Balance cannot be less than 0")
+#     acc_balance = float(input("Enter your bank balance: "))
 
-withdrawl = float(input("Enter the amount you want to withdraw: "))
+# withdrawl = float(input("Enter the amount you want to withdraw: "))
 
-while withdrawl <= 0:
-    print("Amount withdrawn must be greater than zero")
-    withdrawl = float(input("Enter the amount you want to withdraw: "))
+# while withdrawl <= 0:
+#     print("Amount withdrawn must be greater than zero")
+#     withdrawl = float(input("Enter the amount you want to withdraw: "))
 
-while withdrawl > acc_balance:
-    print("Cannot withdraw more than your balance")
-    withdrawl = float(input("Enter the amount you want to withdraw: "))
+# while withdrawl > acc_balance:
+#     print("Cannot withdraw more than your balance")
+#     withdrawl = float(input("Enter the amount you want to withdraw: "))
 
-new_balance = acc_balance - withdrawl
-print(f"Your new balance is {new_balance}")
+# new_balance = acc_balance - withdrawl
+# print(f"Your new balance is {new_balance}")
+
+# for loop practice
+
+# 1. Ask the user for a number n, then print the sum of numbers from 1 to n.
+
+# num = int(input("Enter number: "))
+
+# total = 0
+
+# for x in range(1, num + 1):
+#     total += x
+
+# print(f"Output: {total}")
+
+# 1. Print numbers from 5 to 15
+
+# for x in range(5, 16):
+#     print(x)
+
+# 2. Print even numbers from 1 to 20
+
+# for x in range(2, 21, 2):
+#     print(x)
+
+# 3. Print numbers from 20 to 1 (reverse)
+
+# for x in reversed(range(1, 21)):
+#     print(x)
+
+# 4. Print each character of a word
+# word = "python"
+
+# for letter in word:
+#     print(letter)
+
+#
+
+# 5. Print numbers from 1 to 10 but skip 5
+
+# for x in range(1, 11):
+#     if x == 5:
+#         continue
+#     print(x)
+
+# 6. Stop the loop early
+
+# Print numbers from 1 to 10 but stop when it reaches 7
+
+# for x in range(1, 11):
+#     if x == 7:
+#         break
+#     print(x)
+
+# 7. Count digits in a string
+# text = "abc123xyz"
+
+# counter = 0
+
+# for letter in text:
+#     if letter.isdigit():
+#         counter += 1
+
+# print(f"The text contains {counter} letters")
+
+# 8. count dashes in credit card
+
+# credit_card = "1234-5678-9210"
+
+# counter = 0
+
+# for char in credit_card:
+#     if char == "-":
+#         counter += 1
+
+# print(f"Credit card contains {counter} dashes")
+
+# 9. Print only numbers from string
+# text = "a1b2c3"
+
+# counter = 0
+
+# for char in text:
+#     if char.isalpha():
+#         counter += 1
+
+# print(f"The text contains {counter} letters")
