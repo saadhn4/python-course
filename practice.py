@@ -75,12 +75,39 @@
 # Contains exactly one @
 # Ends with .com
 
-email = input("Enter an email: ")
+# email = input("Enter an email: ")
 
-while not email.find(" ") == -1 or email.count("@") != 1 or not email.endswith(".com"):
-    print(
-        "Email must not contain spaces or more than 1 @ and cannot end with anything other than .com"
-    )
-    email = input("Enter another email: ")
+# while not email.find(" ") == -1 or email.count("@") != 1 or not email.endswith(".com"):
+#     print(
+#         "Email must not contain spaces or more than 1 @ and cannot end with anything other than .com"
+#     )
+#     email = input("Enter another email: ")
 
-print(f"Your email is {email}")
+# print(f"Your email is {email}")
+
+# Compound interest calculator
+# Calculate the final amount
+# Ask user for initial money(principle), interest rate and time in years
+
+principle = float(input("Enter principle: "))
+
+while principle <= 0:
+    print("Principle cannot be less than or equal to 0")
+    principle = float(input("Enter principle: "))
+
+
+rate = float(input("Enter rate: "))
+
+while rate <= 0:
+    print("Interest cannot be less than or equal to 0")
+    rate = float(input("Enter rate: "))
+
+
+time = float(input("Enter time in years: "))
+while time <= 0:
+    print("Time cannot be less than or equal to zero")
+    time = float(input("Enter time: "))
+
+
+total = principle * (1 + rate / 100) ** time
+print(f"Balance after {time} years is ${total:.2f}")
