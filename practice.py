@@ -1,3 +1,6 @@
+import time
+
+
 # Practicing string methods
 
 # 🧠 Exercise: Email Validator
@@ -239,4 +242,37 @@
 # for x in reversed(range(1, 11)):
 #     print(x)
 
-print(10 % 60)
+# print(10 % 60)
+
+# time and loop practice
+
+# 1. Simple Countdown
+# for x in reversed(range(1, 6)):
+#     print(x)
+#     time.sleep(1)
+
+# print("Go!")
+
+# 2. Count Up Timer
+
+# for x in range(1, 6):
+#     print(x)
+#     time.sleep(1)
+
+# print("Done!")
+
+# 3. Print Current Time Every Second
+
+# for x in range(10):
+#     print(time.ctime())
+#     time.sleep(1)
+
+# 🟢 5. Mini Countdown (formatted
+
+seconds = int(input("Enter the number of seconds: "))
+
+for x in reversed(range(1, seconds + 1)):
+    print(f"00:00:{x:02}")
+    time.sleep(1)
+
+print("Time's up")
