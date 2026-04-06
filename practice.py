@@ -235,3 +235,8 @@
 #         counter += 1
 
 # print(f"The text contains {counter} letters")
+
+# for x in reversed(range(1, 11)):
+#     print(x)
+
+print(10 % 60)
