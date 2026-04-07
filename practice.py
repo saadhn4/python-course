@@ -269,10 +269,31 @@ import time
 
 # 🟢 5. Mini Countdown (formatted
 
-seconds = int(input("Enter the number of seconds: "))
+# seconds = int(input("Enter the number of seconds: "))
 
-for x in reversed(range(1, seconds + 1)):
-    print(f"00:00:{x:02}")
-    time.sleep(1)
+# for x in reversed(range(1, seconds + 1)):
+#     print(f"00:00:{x:02}")
+#     time.sleep(1)
 
-print("Time's up")
+# print("Time's up")
+
+# 🔹 1. Print a Square
+
+# Task: Print a 4×4 square using *
+
+# for x in range(4):
+#     for y in range(4):
+#         print("*", end="")
+#     print()
+
+# 🔹 3. Increasing Triangle
+
+# for x in range(1, 5):
+#     for y in range(1, x + 1):
+#         print("*", end="")
+#     print()
+
+# for x in reversed(range(1, 5)):
+#     for y in range(1, x + 1):
+#         print("*", end="")
+#     print()
