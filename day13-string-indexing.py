@@ -27,3 +27,15 @@ print(f"XXXX-XXXX-XXXX-{last_digits}")
 
 # reverse the credit card number
 print(credit_number[::-1])
+
+# Email splicer exercise
+
+email = "saad11fadis@gmail.com"
+
+index = email.find("@")
+
+username = email[0:index]
+
+domain = email[index + 1 :]
+
+print(f"The username is {username} and the domain is {domain}")
