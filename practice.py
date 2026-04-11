@@ -297,3 +297,62 @@ import time
 #     for y in range(1, x + 1):
 #         print("*", end="")
 #     print()
+
+
+# ATM SIMULATOR
+
+balance = 1000
+
+while True:
+    print("----------")
+    print("ATM SIMULATOR")
+    print("----------")
+
+    print("1. Deposit")
+    print("2. Withdraw")
+    print("3. Check balance")
+    print("4. Exit")
+
+    choice = int(input("Enter choice: "))
+
+    if choice == 1:
+        amount = float(input("Enter amount you want to deposit: "))
+        balance += amount
+    elif choice == 2:
+        amount = float(input("Enter amount you want to withdraw: "))
+        if amount > balance:
+            print("Amount cannot be greather than balance")
+        balance -= amount
+    elif choice == 3:
+        print(f"Your balance is: {balance}")
+    else:
+        break
+
+# foods = []
+# prices = []
+# total = 0
+
+# while True:
+#     food = input("Enter your item: ")
+
+#     if not food == "q":
+#         foods.append(food)
+
+#         quantity = int(input(f"Enter the number of {food}: "))
+#         price = float(input("Enter the price of item: "))
+
+#         prices.append(quantity * price)
+#     else:
+#         break
+
+# print("--------")
+# print("MY CART")
+# print("--------")
+
+# for food in foods:
+#     print(food, end=" ")
+
+# for price in prices:
+#     total += price
+
+# print(f"Your total is ${total}")
