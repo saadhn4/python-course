@@ -301,32 +301,32 @@ import time
 
 # ATM SIMULATOR
 
-balance = 1000
+# balance = 1000
 
-while True:
-    print("----------")
-    print("ATM SIMULATOR")
-    print("----------")
+# while True:
+#     print("----------")
+#     print("ATM SIMULATOR")
+#     print("----------")
 
-    print("1. Deposit")
-    print("2. Withdraw")
-    print("3. Check balance")
-    print("4. Exit")
+#     print("1. Deposit")
+#     print("2. Withdraw")
+#     print("3. Check balance")
+#     print("4. Exit")
 
-    choice = int(input("Enter choice: "))
+#     choice = int(input("Enter choice: "))
 
-    if choice == 1:
-        amount = float(input("Enter amount you want to deposit: "))
-        balance += amount
-    elif choice == 2:
-        amount = float(input("Enter amount you want to withdraw: "))
-        if amount > balance:
-            print("Amount cannot be greather than balance")
-        balance -= amount
-    elif choice == 3:
-        print(f"Your balance is: {balance}")
-    else:
-        break
+#     if choice == 1:
+#         amount = float(input("Enter amount you want to deposit: "))
+#         balance += amount
+#     elif choice == 2:
+#         amount = float(input("Enter amount you want to withdraw: "))
+#         if amount > balance:
+#             print("Amount cannot be greather than balance")
+#         balance -= amount
+#     elif choice == 3:
+#         print(f"Your balance is: {balance}")
+#     else:
+#         break
 
 # foods = []
 # prices = []
@@ -356,3 +356,40 @@ while True:
 #     total += price
 
 # print(f"Your total is ${total}")
+
+# Quiz game
+
+questions = ("What is 6+1?: ", "What is 7+1: ", "What is 5+5?: ")
+
+options = (
+    ("A: 7", "B: 5", "C: 3"),
+    ("A: 8", "B: 2", "C: 5"),
+    ("A: 10", "B: 2", "C: 7"),
+)
+
+answers = ("A", "A", "A")
+
+guesses = []
+
+question_num = 0
+
+score = 0
+
+for question in questions:
+    print("-----------------")
+    print(question)
+    for option in options[question_num]:
+        print(option)
+    guess = input("Enter your guess: ")
+    guesses.append(guess)
+    if guess == answers[question_num]:
+        score += 1
+        print("CORRECT!")
+    else:
+        print("INCORRECT!")
+        print(f"The answer is {answers[question_num]}")
+    question_num += 1
+
+
+print("-----------------")
+print(f"Score: {score}")
