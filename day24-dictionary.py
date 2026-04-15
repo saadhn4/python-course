@@ -50,4 +50,4 @@ values = capitals.values()
 items = capitals.items()
 
 for key, value in capitals.items():
-    print(f"{key} : {value}")
+    print(f"{key} : {value:.2f}")
