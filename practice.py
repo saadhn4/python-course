@@ -359,37 +359,69 @@ import time
 
 # Quiz game
 
-questions = ("What is 6+1?: ", "What is 7+1: ", "What is 5+5?: ")
+# questions = ("What is 6+1?: ", "What is 7+1: ", "What is 5+5?: ")
 
-options = (
-    ("A: 7", "B: 5", "C: 3"),
-    ("A: 8", "B: 2", "C: 5"),
-    ("A: 10", "B: 2", "C: 7"),
-)
+# options = (
+#     ("A: 7", "B: 5", "C: 3"),
+#     ("A: 8", "B: 2", "C: 5"),
+#     ("A: 10", "B: 2", "C: 7"),
+# )
 
-answers = ("A", "A", "A")
+# answers = ("A", "A", "A")
 
-guesses = []
+# guesses = []
 
-question_num = 0
+# question_num = 0
 
-score = 0
+# score = 0
 
-for question in questions:
-    print("-----------------")
-    print(question)
-    for option in options[question_num]:
-        print(option)
-    guess = input("Enter your guess: ")
-    guesses.append(guess)
-    if guess == answers[question_num]:
-        score += 1
-        print("CORRECT!")
-    else:
-        print("INCORRECT!")
-        print(f"The answer is {answers[question_num]}")
-    question_num += 1
+# for question in questions:
+#     print("-----------------")
+#     print(question)
+#     for option in options[question_num]:
+#         print(option)
+#     guess = input("Enter your guess: ")
+#     guesses.append(guess)
+#     if guess == answers[question_num]:
+#         score += 1
+#         print("CORRECT!")
+#     else:
+#         print("INCORRECT!")
+#         print(f"The answer is {answers[question_num]}")
+#     question_num += 1
 
 
-print("-----------------")
-print(f"Score: {score}")
+# print("-----------------")
+# print(f"Score: {score}")
+
+# menu = {"pizza": 3.00, "soda": 2.00, "chips": 1.00, "popcorn": 6.50, "candy": 1.80}
+
+# cart = []
+# total = 0
+
+# print("-----MENU-----")
+
+# for key, value in menu.items():
+#     print(f"{key:10}: {value}")
+
+# print("--------------")
+
+# while True:
+#     food = input("Select an item (q to exit): ").lower()
+
+#     if food == "q":
+#         break
+#     elif menu.get(food) is None:
+#         print("This item is not available")
+#     else:
+#         cart.append(food)
+
+# print("-----Your order-----")
+
+# for item in cart:
+#     total += menu.get(item)
+#     print(item, end=" ")
+
+# print()
+# print(f"Your total is ${total:.2f}")
+# print("---------------------")
