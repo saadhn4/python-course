@@ -2,7 +2,6 @@ import random
 
 options = ["rock", "paper", "scissors"]
 
-computer_move = random.choice(options)
 
 while True:
     player_move = input("Enter your move (q to exit): ")
@@ -16,6 +15,11 @@ while True:
         and not player_move == "scissors"
     ):
         print("Not a valid move")
+        # using continue here to skip the rest of the code
+        continue
+
+    # moved inside the loop so computer picks random choice with each loop, otherwise just 1
+    computer_move = random.choice(options)
 
     print(f"You picked {player_move}")
     print(f"Computer picked {computer_move}")
