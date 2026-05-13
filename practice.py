@@ -1,6 +1,5 @@
 import time
 
-
 # Practicing string methods
 
 # 🧠 Exercise: Email Validator
@@ -425,3 +424,26 @@ import time
 # print()
 # print(f"Your total is ${total:.2f}")
 # print("---------------------")
+
+# Hangman game test
+# import random
+
+# words = ["Apple", "Banana", "Orange"]
+# random_word = random.choice(words)
+# tries = len(random_word)
+
+# while True:
+#     if tries > 0:
+#         guess = input("Enter a letter: ")
+
+#         if guess not in random_word:
+#             print(f"{guess} is not in the word")
+#             tries -= 1
+#         else:
+#             print(f"{guess} is a letter in the word")
+#     else:
+#         print("You are out of tries")
+#         print(f"The word was {random_word}")
+#         random_word = random.choice(words)
+#         tries = len(random_word)
+#         break
